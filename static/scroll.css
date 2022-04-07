@@ -1,0 +1,18 @@
+.messages.card-body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.messages.card-body::-webkit-scrollbar-track {
+    background: white;
+}
+
+.messages.card-body::-webkit-scrollbar-thumb {
+    background: #ddd;
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+.messages.card-body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
