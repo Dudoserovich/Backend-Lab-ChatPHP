@@ -43,7 +43,7 @@ function getMessages($textMessages, $textUsername)
                     <div class="user-name"><strong>@' . $message["username"] . '</strong></div>
                     <div class="user-time" style="font-size: 12px; color: darkgrey">' . $message["date"] . '</div>
                 </div>
-                <div class="user-message">' . $message["message"] . '</div>
+                <div class="user-message">' . htmlspecialchars($message["message"], ENT_QUOTES) . '</div>
             </div>
             </div>';
     }
